@@ -4,8 +4,8 @@
   "description": "Landing page for Evitt",
   "scripts": {
     "build": "npm-run-all --sequential css-compile css-prefix css-minify",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss public/css/main.css",
-    "css-minify": "cleancss --level 1 --source-map --output public/css/main.min.css public/css/main.css",
+    "css-compile": "node-sass --output-style expanded scss/main.scss public/css/main.css",
+    "css-minify": "cleancss --level 1 --output public/css/main.min.css public/css/main.css",
     "css-prefix": "postcss --use autoprefixer --replace \"public/css/*.css\" \"!public/css/*.min.css\""    
   },
   "repository": {
