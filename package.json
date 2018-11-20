@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Landing page for Evitt",
   "scripts": {
-    "deploy": "gh-pages -d public",
-    "css": "npm-run-all --sequential css:compile css:prefix css:minify",
+    "deploy": "npm-run-all --sequential css:prod deploy:gh-pages",
+    "deploy:gh-pages": "gh-pages -d public",
+    "css:prod": "npm-run-all --sequential css:dev css:minify",
+    "css:dev": "npm-run-all --sequential css:compile css:prefix",
     "css:compile": "node-sass --omit-source-map-url --include-path node_modules --output-style expanded scss/main.scss public/css/main.css",
     "css:minify": "cleancss --level 1 --inline all --output public/css/main.min.css public/css/main.css",
-    "css:prefix": "postcss --use autoprefixer --replace \"public/css/*.css\" \"!public/css/*.min.css\""
+    "css:prefix": "postcss --use autoprefixer --replace \"public/css/*.css\" \"!public/css/*.min.css\"",
+    "watch:css": "nodemon --watch scss -e scss -x \"npm run css:dev\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
     "clean-css-cli": "4.2.1",
     "gh-pages": "2.0.1",
     "node-sass": "4.10.0",
+    "nodemon": "1.18.6",
     "npm-run-all": "4.1.3",
     "postcss-cli": "6.0.1"
   }
