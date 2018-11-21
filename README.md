@@ -26,11 +26,9 @@ Whenever you enter this repo's directory, you should always run `nvm use` before
 ## Deploying to Github Pages
 We use the `gh-pages` npm module to manage deployment to Github Pages
 
-First make sure `public/index.html` is referencing the minified CSS file
 
-Then deploy to Github Pages:
-```bash
-npm run deploy
-```
+1. First make sure `public/index.html` is referencing the minified CSS file
+2. Commit your local changes
+3. Deploy to Github Pages: `npm run deploy`
 
 This will prepare all SCSS for production and publish only the contents of the `public/` folder to the `gh-pages` branch
