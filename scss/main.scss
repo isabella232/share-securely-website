@@ -1,5 +1,17 @@
+// Import Nunito font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
 // Bootstrap default variable overrides
 // Needs to be done before importing bootstrap
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px
+);
+$font-family-sans-serif:      'Open Sans', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// The font we use doesn't have a 500 weight (what Bootstrap uses by default)
+$headings-font-weight:        600;
 $body-bg:                   #fbfbfb;
 $body-color:                #000;
 $primary:                   #ea6934;
@@ -33,6 +45,10 @@ $box-shadow:                  0.25rem 0.5rem 1.5rem rgba(#000, 0.15);
     width: 100% \9;
 }
 
+.font-weight-semi-bold {
+    font-weight: 600;
+}
+
 body {
     .content-box {
         @extend .border-0, .rounded-0, .shadow;
@@ -56,7 +72,12 @@ body {
             margin: 1.5rem -1rem;
             @include media-breakpoint-up('md') {
                 margin: 0;
+            }
+            @include media-breakpoint-only('md') {
                 max-width: 70%;
+            }
+            @include media-breakpoint-up('lg') {
+                max-width: 50%;
             }
 
             img {
