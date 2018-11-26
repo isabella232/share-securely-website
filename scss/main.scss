@@ -47,11 +47,11 @@ $box-shadow:                  0.25rem 0.5rem 1.5rem rgba(#000, 0.15);
     font-weight: 600;
 }
 
-body {
-    .navbar-header-image {
-        height: 50px;
-    }
+.logo {
+    height: 50px;
+}
 
+body {
     .content-box {
         @extend .border-0, .rounded-0, .shadow;
         background-color: $white;
