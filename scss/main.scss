@@ -34,22 +34,24 @@ $box-shadow:                  0.25rem 0.5rem 1.5rem rgba(#000, 0.15);
 @import "node_modules/bootstrap/scss/utilities/spacing";
 @import "node_modules/bootstrap/scss/utilities/shadows";
 @import "node_modules/bootstrap/scss/utilities/sizing";
+@import "node_modules/bootstrap/scss/utilities/background";
+@import "node_modules/bootstrap/scss/utilities/display";
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/navbar";
 
-%content-img {
-    @extend .img-fluid;
-    // Fix for SVG images in IE 10
-    width: 100% \9;
-}
 
 .font-weight-semi-bold {
     font-weight: 600;
 }
 
 body {
+    .navbar-header-image {
+        height: 50px;
+    }
+
     .content-box {
         @extend .border-0, .rounded-0, .shadow;
         background-color: $white;
@@ -58,16 +60,12 @@ body {
             padding: 2rem 2.5rem;
         }
 
-        .image {
-            margin: 1.5rem 3rem;
-            @include media-breakpoint-up('md') {
-                margin: 0;
-            }
-
-            img {
-                @extend %content-img;
-            }
+        .content-img {
+            @extend .img-fluid;
+            // Fix for SVG images in IE 10
+            width: 100% \9;
         }
+
         .everywhere {
             margin: 1.5rem -1rem;
             @include media-breakpoint-up('md') {
@@ -78,10 +76,6 @@ body {
             }
             @include media-breakpoint-up('lg') {
                 max-width: 50%;
-            }
-
-            img {
-                @extend %content-img;
             }
         }
     }
