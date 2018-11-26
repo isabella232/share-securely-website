@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for Evitt",
   "scripts": {
-    "deploy": "npm-run-all --sequential css:prod deploy:gh-pages",
+    "deploy": "npm run deploy:gh-pages",
     "deploy:gh-pages": "gh-pages -d public",
     "css:prod": "npm-run-all --sequential css:dev css:minify",
     "css:dev": "npm-run-all --sequential css:compile css:prefix",

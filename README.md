@@ -28,7 +28,8 @@ We use the `gh-pages` npm module to manage deployment to Github Pages
 
 
 1. First make sure `public/index.html` is referencing the minified CSS file
-2. Commit your local changes
-3. Deploy to Github Pages: `npm run deploy`
+2. `npm run css:prod`
+3. Add and commit your local changes (make sure you also commit the minified CSS file)
+4. `npm run deploy`
 
 This will prepare all SCSS for production and publish only the contents of the `public/` folder to the `gh-pages` branch
