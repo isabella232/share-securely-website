@@ -9,6 +9,22 @@ $container-max-widths: (
   lg: 960px,
   xl: 960px
 );
+// Adding another spacer
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 5)
+  ),
+  $spacers
+);
 $font-family-sans-serif:      'Open Sans', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // The font we use doesn't have a 500 weight (what Bootstrap uses by default)
 $headings-font-weight:        600;
@@ -52,6 +68,15 @@ $box-shadow:                  0.25rem 0.5rem 1.5rem rgba(#000, 0.15);
 }
 
 body {
+    .partner-logo-wrap {
+        padding: 0;
+        img {
+            @extend .img-fluid;
+            padding: 0 1.5rem;
+            // There are 5 images each with two margins
+            max-width: 18%;
+        }
+    }
     .content-box {
         @extend .border-0, .rounded-0, .shadow;
         background-color: $white;
