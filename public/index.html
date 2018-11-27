@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
     <body>
-        <nav class="navbar navbar-container bg-transparent mb-5 p-1 py-md-3 px-md-4">
-            <a href="/" class="navbar-brand"><img src="img/evitt_header.svg" alt="Evitt Header" class="logo"></a>
-            <a class="btn btn-primary font-weight-semi-bold d-none d-md-block" role="button" href="https://app.evitt.io/">Signup / Login</a>
+        <nav class="navbar navbar-container bg-transparent mb-5">
+            <div class="container">
+                <a href="/" class="navbar-brand"><img src="img/evitt_header.svg" alt="Evitt Header" class="logo"></a>
+                <a class="btn btn-primary font-weight-semi-bold d-none d-md-block" role="button" href="https://app.evitt.io/">Signup / Login</a>        
+            </div>
         </nav>
         <div class="container">
-            <div class="row mb-5 text-center text-md-left">
+            <div class="row mb-5 mb-md-7 text-center text-md-left">
                 <div class="col-md-6">
-                    <h1>Events.<br />It's what we do.</h1>
-                    <p class="font-weight-light">Meet Evitt, your new best friend. Evitt works seemlessly to bring you all the latest events in an intuitive way.</p>
+                    <div class="title-wrap">
+                        <div>
+                            <h1>Events.<br />It's what we do.</h1>
+                            <p class="font-weight-light">Meet Evitt, your new best friend. Evitt works seemlessly to bring you all the latest events in an intuitive way.</p>                
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x250.png?text=Calendar+Image" alt="Evitt Calendar outline" />
+                    <img class="img-fluid" src="img/calendar_illustration.svg" alt="Evitt Calendar outline" />
                 </div>
             </div>
             <div class="row mb-5 text-center d-md-none">
@@ -27,7 +33,7 @@
                     <a class="btn btn-primary font-weight-semi-bold" role="button" href="https://app.evitt.io/">Signup / Login</a>
                 </div>
             </div>
-            <div class="mb-5 d-none d-md-block">
+            <div class="mb-6 d-none d-md-block">
                 <h4 class="text-center">Trusted by</h4>
                 <ul class="partner-logo-wrap text-center">
                     <img src="img/partner_logos/ybi.png" alt="Team NEO Logo">
@@ -116,16 +122,20 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-transparent d-flex justify-content-between mt-auto px-1 py-2 py-md-3 px-md-4">
-            <ul class="list-inline m-0">
-                <li class="list-inline-item">
-                    <img src="img/edc_logo.svg" alt="The Event Discovery Company, LLC Logo" class="logo">
-                </li>
-                <li class="list-inline-item small">
-                    &copy; <script type="text/JavaScript"> var theDate=new Date(); document.write(theDate.getFullYear()); </script> - The Event Discovery Company, LLC
-                </li>
-            </ul>
-            <img src="img/evitt_logo.svg" alt="Evitt Logo" class="logo">            
+        <footer class="bg-transparent mt-auto py-2 px-3">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="https://eventdiscovery.company/" target="_blank"><img src="img/edc_logo.svg" alt="The Event Discovery Company Logo" class="logo"></a>
+                        </li>
+                        <li class="list-inline-item small">
+                            &copy; <script type="text/JavaScript"> var theDate=new Date(); document.write(theDate.getFullYear()); </script> - The Event Discovery Company
+                        </li>
+                    </ul>
+                    <img src="img/evitt_logo.svg" alt="Evitt Logo" class="logo">            
+                </div>
+            </div>
         </footer>
     </body>
 </html>

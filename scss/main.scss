@@ -1,5 +1,6 @@
 // Import Nunito font
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+// NOTE: reinclude font weight 700 if using bold
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 // Bootstrap default variable overrides
 // Needs to be done before importing bootstrap
@@ -21,7 +22,8 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    6: ($spacer * 5)
+    6: ($spacer * 5),
+    7: ($spacer * 10)
   ),
   $spacers
 );
@@ -68,6 +70,13 @@ $box-shadow:                  0.25rem 0.5rem 1.5rem rgba(#000, 0.15);
 }
 
 body {
+    .title-wrap {
+        @include media-breakpoint-up('md') {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+    }
     .partner-logo-wrap {
         padding: 0;
         img {
