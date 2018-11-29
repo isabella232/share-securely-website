@@ -33,3 +33,5 @@ We use the `gh-pages` npm module to manage deployment to Github Pages
 4. `npm run deploy`
 
 This will prepare all SCSS for production and publish only the contents of the `public/` folder to the `gh-pages` branch
+
+**NOTE:** Don't delete the CNAME file. WIthout it the custom domain on Github Pages breaks. ANy time the domain needs to be changed, it should be in the settings of the repo and manually in the CNAME file (in that order)
