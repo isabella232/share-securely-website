@@ -69,26 +69,6 @@ $secondary-bg-color: #eef0f0;
     height: auto;
 }
 
-$grid-circles: (
-    0: (
-        'xs': 100px,
-        'md': 200px,
-        'lg': 300px
-    )
-);
-
-@mixin set-circle-sizes($index, $widths: $grid-circles) {
-    $sizes: map-get($widths, $index);
-    @each $breakpoint, $size in $sizes {
-        @include media-breakpoint-up($breakpoint) {
-            svg {
-                width: $size;
-                height: $size;
-            }
-        }
-    }
-}
-
 body {
     position: relative;
 
@@ -131,6 +111,36 @@ body {
                 top: 350px;
                 right: 35%;
             }
+        }
+        .circle-3 {
+            @extend %circle;
+            top: 30%;
+            left: -150px;
+        }
+        .circle-4 {
+            @extend %circle;
+            top: 38%;
+            right: -25px;
+        }
+        .circle-5 {
+            @extend %circle;
+            top: 54%;
+            left: 50%;
+        }
+        .circle-6 {
+            @extend %circle;
+            top: 60%;
+            left: 10%;
+        }
+        .circle-7 {
+            @extend %circle;
+            top: 65%;
+            right: -50px;
+        }
+        .circle-8 {
+            @extend %circle;
+            top: 75%;
+            left: 20%;
         }
     }
 
