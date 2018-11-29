@@ -64,11 +64,6 @@ $secondary-bg-color: #eef0f0;
     }
 }
 
-%circle {
-    position: absolute;
-    height: auto;
-}
-
 body {
     position: relative;
 
@@ -85,8 +80,12 @@ body {
         height: 100%;
         overflow: hidden;
 
+        .circle {
+            position: absolute;
+            height: auto;
+        }
+
         .circle-0 {
-            @extend %circle;
             top: -100px;
             right: 15%;
             @include media-breakpoint-up('md') {
@@ -95,7 +94,6 @@ body {
             }
         }
         .circle-1 {
-            @extend %circle;
             top: 250px;
             right: -300px;
             @include media-breakpoint-up('md') {
@@ -105,7 +103,6 @@ body {
         }
 
         .circle-2 {
-            @extend %circle;
             top: 325px;
             right: 80%;
             @include media-breakpoint-up('md') {
@@ -118,32 +115,32 @@ body {
             }
         }
         .circle-3 {
-            @extend %circle;
+            @extend .d-none, .d-md-block;
             top: 30%;
             left: -150px;
         }
         .circle-4 {
-            @extend %circle;
+            @extend .d-none, .d-md-block;
             top: 38%;
             right: -25px;
         }
         .circle-5 {
-            @extend %circle;
+            @extend .d-none, .d-md-block;
             top: 54%;
             left: 50%;
         }
         .circle-6 {
-            @extend %circle;
+            @extend .d-none, .d-md-block;
             top: 60%;
             left: 10%;
         }
         .circle-7 {
-            @extend %circle;
+            @extend .d-none, .d-md-block;
             top: 65%;
             right: -50px;
         }
         .circle-8 {
-            @extend %circle;
+            @extend .d-none, .d-md-block;
             top: 75%;
             left: 20%;
         }
