@@ -72,6 +72,11 @@ $secondary-bg-color: #eef0f0;
 body {
     position: relative;
 
+    .login-btn {
+        // Set it super high, it just works for some reason
+        border-radius: 10rem;
+    }
+
     .circle-container {
         position: absolute;
         left: 0;
