@@ -1,7 +1,7 @@
 {
-  "name": "evitt-website",
+  "name": "share-securely-website",
   "version": "1.0.0",
-  "description": "Landing page for Evitt",
+  "description": "Landing page for Share Securely project",
   "scripts": {
     "deploy": "npm run deploy:gh-pages",
     "deploy:gh-pages": "gh-pages -d public",
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheEventDiscoveryCompany/evitt-website.git"
+    "url": "git+https://github.com/TheEventDiscoveryCompany/share-securely-website.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/TheEventDiscoveryCompany/evitt-website/issues"
+    "url": "https://github.com/TheEventDiscoveryCompany/share-securely-website/issues"
   },
-  "homepage": "https://github.com/TheEventDiscoveryCompany/evitt-website#readme",
+  "homepage": "https://github.com/TheEventDiscoveryCompany/share-securely-website#readme",
   "dependencies": {
     "bootstrap": "4.2.1",
     "jquery": "3.3.1",
