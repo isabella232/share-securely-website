@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/TheEventDiscoveryCompany/evitt-website#readme",
   "dependencies": {
-    "bootstrap": "4.1.3",
-    "jquery": "1.9.1",
+    "bootstrap": "4.2.1",
+    "jquery": "3.3.1",
     "popper.js": "1.14.5"
   },
   "devDependencies": {
