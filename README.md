@@ -1,5 +1,5 @@
-# evitt-website
-Landing page for Evitt
+# share-securely-website
+Landing page for Share Securely project
 
 ## Building the project
 When making changes to any SCSS files, you will need to rebuild the project:
@@ -18,7 +18,7 @@ npm run watch:css
 - Install nvm (Node Version Manager) using the directions at https://github.com/creationix/nvm#installation
 - `nvm use`
 - `npm install`
-- `npm watch:css`
+- `npm run watch:css`
 - Run a local server in the `public/` directory
 
 Whenever you enter this repo's directory, you should always run `nvm use` before doing anything, so that you use our sanctioned version of Node.
@@ -34,4 +34,4 @@ We use the `gh-pages` npm module to manage deployment to Github Pages
 
 This will prepare all SCSS for production and publish only the contents of the `public/` folder to the `gh-pages` branch
 
-**NOTE:** Don't delete the CNAME file. WIthout it the custom domain on Github Pages breaks. ANy time the domain needs to be changed, it should be changed manually in the CNAME file
+**NOTE:** Don't delete `public/CNAME`. Without it the custom domain on Github Pages breaks. Any time the domain needs to be changed, it should be changed manually in `public/CNAME`

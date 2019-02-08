@@ -18,8 +18,8 @@ $font-family-sans-serif:      'Open Sans', sans-serif, "Apple Color Emoji", "Seg
 // The font we use doesn't have a 500 weight (what Bootstrap uses by default)
 $headings-font-weight:        600;
 $body-bg:                   #fbfbfb;
-$body-color:                #000;
-$primary:                   #ea6934;
+$body-color:                #111;
+$primary:                   #3d90e3;
 $btn-padding-x:               1.5rem;
 $btn-padding-x-sm:            $btn-padding-x;
 $btn-padding-x-lg:            $btn-padding-x;
@@ -55,7 +55,7 @@ $secondary-bg-color: #eef0f0;
 }
 
 .logo {
-    height: 50px;
+    height: 75px;
 }
 
 %curve-container {
@@ -171,15 +171,6 @@ body {
     }
 
     .content-container {
-        .partner-logo-wrap {
-            padding: 0;
-            img {
-                @extend .img-fluid;
-                padding: 0 1.5rem;
-                // There are 5 images each with two margins
-                max-width: 18%;
-            }
-        }
         .content-box {
             @extend .border-0, .rounded-0, .shadow;
             background-color: $white;
