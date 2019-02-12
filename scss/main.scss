@@ -96,7 +96,7 @@ body {
             }
         }
         .circle-1 {
-            top: 250px;
+            top: 340px;
             right: -300px;
             @include media-breakpoint-up('md') {
                 top: 90px;
@@ -105,7 +105,7 @@ body {
         }
 
         .circle-2 {
-            top: 350px;
+            top: 400px;
             right: 80%;
             @include media-breakpoint-up('md') {
                 top: 275px;
@@ -183,19 +183,6 @@ body {
                 @extend .img-fluid;
                 // Fix for SVG images in IE 10
                 width: 100% \9;
-            }
-    
-            .everywhere {
-                margin: 1.5rem -1rem;
-                @include media-breakpoint-up('md') {
-                    margin: 0;
-                }
-                @include media-breakpoint-only('md') {
-                    max-width: 70%;
-                }
-                @include media-breakpoint-up('lg') {
-                    max-width: 50%;
-                }
             }
         }
     }
