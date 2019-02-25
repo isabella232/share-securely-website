@@ -187,6 +187,16 @@ body {
         }
     }
 
+    .pricing-title {
+        font-size: 2.5rem;
+    }
+
+    .pricing-list {
+        li {
+            padding: .3rem .1rem;
+        }
+    }
+
     .bottom-curve-container {
         @extend %curve-container;
         background-color: $body-bg;
