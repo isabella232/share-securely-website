@@ -76,7 +76,7 @@ html {
 
     body {
         position: relative;
-    
+
         .circle-container {
             position: absolute;
             left: 0;
@@ -84,12 +84,12 @@ html {
             width: 100%;
             height: 100%;
             overflow: hidden;
-    
+
             .circle {
                 position: absolute;
                 height: auto;
             }
-    
+
             .circle-0 {
                 top: -100px;
                 right: 20%;
@@ -106,7 +106,7 @@ html {
                     right: -200px;
                 }
             }
-    
+
             .circle-2 {
                 top: 400px;
                 right: 80%;
@@ -150,8 +150,8 @@ html {
                 left: 20%;
             }
         }
-    
-    
+
+
         .header-container {
             background-color: $secondary-bg-color;
             .title-wrap {
@@ -162,7 +162,7 @@ html {
                 }
             }
         }
-    
+
         .top-curve-container {
             @extend %curve-container;
             background-color: $secondary-bg-color;
@@ -172,7 +172,7 @@ html {
                 }
             }
         }
-    
+
         .content-container {
             .content-box {
                 @extend .border-0, .rounded-0, .shadow;
@@ -181,7 +181,7 @@ html {
                 @include media-breakpoint-up('md') {
                     padding: 2rem 2.5rem;
                 }
-    
+
                 .content-img {
                     @extend .img-fluid;
                     // Fix for SVG images in IE 10
@@ -189,17 +189,17 @@ html {
                 }
             }
         }
-    
+
         .pricing-title {
             font-size: 2.5rem;
         }
-    
+
         .pricing-list {
             li {
                 padding: .3rem .1rem;
             }
         }
-    
+
         .bottom-curve-container {
             @extend %curve-container;
             background-color: $body-bg;
@@ -209,9 +209,18 @@ html {
                 }
             }
         }
-    
+
         .footer-container {
             background-color: $secondary-bg-color;
+        }
+
+        pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
         }
     }
 }
