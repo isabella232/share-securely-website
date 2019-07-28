@@ -155,6 +155,12 @@ html {
         .header-container {
             background-color: $secondary-bg-color;
             .title-wrap {
+                margin-bottom: 3rem;
+
+                .producthunt {
+                    display: none;
+                }
+
                 @include media-breakpoint-up('md') {
                     display: flex;
                     align-items: center;

@@ -77,12 +77,17 @@
                 <div class="row text-center text-md-left">
                     <div class="col-md-6">
                         <div class="title-wrap">
-                            <div>
-                                <h1>Fast, Secure<br />Password Sharing</h1>
-                                <p class="font-weight-light">
-                                    Share Securely is the one click way for your clients to securely send you passwords.
-                                </p>
-                                <p class="text-center text-md-left"><a class="signup-btn" role="button" href="#pricing">Sign Up <i class="fas fa-arrow-right"></i></a></p>
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <h1>Fast, Secure<br />Password Sharing</h1>
+                                    <p class="font-weight-light">
+                                        Share Securely is the one click way for your clients to securely send you passwords.
+                                    </p>
+                                    <p class="text-center text-md-left"><a class="signup-btn" role="button" href="#pricing">Sign Up <i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <a class="producthunt" href="https://www.producthunt.com/posts/share-securely?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-share-securely" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=162736&theme=light" alt="Share Securely - The one click way for your clients to send you passwords | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -268,6 +273,14 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-130158533-2');
+        </script>
+        <script>
+            var today = new Date();
+            var startPhPromo = new Date('Wed Jul 31 2019 09:00:00 GMT-0400');
+            var endPhPromo = new Date('Thu Aug 1 2019 09:00:00 GMT-0400');
+            if (today > startPhPromo && today < endPhPromo){
+                document.getElementsByClassName('producthunt')[0].style.display = 'inline';
+            }
         </script>
     </body>
 </html>
