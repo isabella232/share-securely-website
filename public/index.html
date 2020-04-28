@@ -76,12 +76,10 @@
                 <div class="row text-center text-md-left">
                     <div class="col-md-6">
                         <div class="title-wrap">
-                            <div>
-                                <h1>Fast, Secure<br />Password Sharing</h1>
-                                <p class="font-weight-light">
-                                    Share Securely is the one click way for your clients to securely send you passwords.
-                                </p>
-                            </div>
+                            <h1>Fast, Secure<br />Password Sharing</h1>
+                            <p class="font-weight-light">
+                                Share Securely is the one click way for your clients to securely send you passwords.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -265,6 +263,14 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-130158533-2');
+        </script>
+        <script>
+            var today = new Date();
+            var startPhPromo = new Date('Wed Jul 31 2019 09:00:00 GMT-0400');
+            var endPhPromo = new Date('Thu Aug 1 2019 09:00:00 GMT-0400');
+            if (today > startPhPromo && today < endPhPromo){
+                document.getElementsByClassName('producthunt')[0].style.display = 'inline';
+            }
         </script>
     </body>
 </html>
